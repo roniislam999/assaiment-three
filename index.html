@@ -32,11 +32,12 @@
 
 <body>
     <header class="max-w-[1340px] px-8 md:px-16 lg:px-32 mx-auto">
-        <nav class=" grid-flow-row md:my-5 md:px-8 py-4 mt-3 md:rounded-full lg:rounded-full bg-red-600">
+        <nav class=" grid-flow-col md:my-5 md:px-8 py-4 mt-3 md:rounded- lg:rounded-full bg-red-600">
 
             <div class="md:flex justify-between items-center">
-                <div class="lg:flex">
-                    <ul class="menu menu-horizontal px-1 gap-4 text-white">
+                <div class="md:flex">
+                    <ul class="menu menu-horizontal px-1 gap-2 md:gap-3
+                     text-white">
                         <li class="font-semibold "><a class="hover:bg-green-500">Home</a></li>
                         <li class="font-semibold"><a class="hover:bg-green-500">About Us</a></li>
                         <li class="font-semibold"><a class="hover:bg-green-500">Shop</a></li>
@@ -51,14 +52,18 @@
                     </span>
                 </div>
 
-                <div class="form-control w-[300px] h-16 py-2">
-                    <input type="text" placeholder="Search"
-                        class="input input-bordered w-24 md:w-auto bg-white text-black" />
+                <div class=" flex items-center relative px-2 h-16 py-2">
+                    <input  type="text" placeholder="Search"
+                        class="input input-bordered w-full md:w-80 bg-white text-black rounded-full " />
+                        <div class=" absolute right-5"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M20.9998 21L15.8028 15.803M15.8028 15.803C17.2094 14.3965 17.9996 12.4887 17.9996 10.4995C17.9996 8.51035 17.2094 6.60262 15.8028 5.19605C14.3962 3.78947 12.4885 2.99927 10.4993 2.99927C8.51011 2.99927 6.60238 3.78947 5.19581 5.19605C3.78923 6.60262 2.99902 8.51035 2.99902 10.4995C2.99902 12.4887 3.78923 14.3965 5.19581 15.803C6.60238 17.2096 8.51011 17.9998 10.4993 17.9998C12.4885 17.9998 14.3962 17.2096 15.8028 15.803Z" stroke="#121212" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg></div>
                 </div>
+                
             </div>
         </nav>
         <!-- banner content -->
-        <section class="max-w-[1440px] mx-auto">
+        <section class="max-w-[1440px] mx-auto mt-4">
             <div class="carousel w-full">
                 <div id="slide1" class="carousel-item relative w-full">
                     <div class="hero min-h-screen" style="background-image: url(images/banner1.png);">
